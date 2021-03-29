@@ -62,6 +62,12 @@ public class Player : MonoBehaviour
         lastPosition = _rigidbody.position;
     }
 
+    internal void StartPlay()
+    {
+        _transform.position = new Vector3(0, 0.5f, 5f);
+        SetMovement(true);
+    }
+
     private bool IsGrounded() 
     {
         return Math.Abs(_rigidbody.velocity.y) <= 0.01f;

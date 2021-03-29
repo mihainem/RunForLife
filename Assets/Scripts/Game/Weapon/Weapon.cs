@@ -34,9 +34,6 @@ public class Weapon : MonoBehaviour
                 bullets[i].gameObject.SetActive(true);
                 bullets[i].transform.position = spawnPoint.position;
                 bullets[i].transform.rotation = spawnPoint.rotation * bulletPrefab.transform.rotation;
-               // bullets[i].velocity = spawnPoint.up * bulletPrefab.speed;
-                /*bullets[i].transform.position = spawnPoint.position;
-                bullets[i].transform.rotation = spawnPoint.rotation * bulletPrefab.transform.rotation;*/
                 return;
             }
         }
@@ -48,7 +45,7 @@ public class Weapon : MonoBehaviour
         {
             if (bullets[i].gameObject.activeSelf) 
             {
-                bullets[i].transform.position += bullets[i].transform.forward * bulletPrefab.speed;
+                bullets[i].transform.position += bullets[i].transform.forward * bulletPrefab.speed * Time.deltaTime;
                 if ((spawnPoint.position - bullets[i].transform.position).magnitude > 30f) 
                 {
                     bullets[i].gameObject.SetActive(false);
