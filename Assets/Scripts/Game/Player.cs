@@ -6,7 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float speed = 6f;
-    [SerializeField] private float jumpForce=4.5f;
+    [SerializeField] private float jumpForce = 4.5f;
     private bool jump;
     private float horrizontalMovementUnit = 3f;
     private Vector3 lastPosition;
@@ -25,11 +25,11 @@ public class Player : MonoBehaviour
         gun = GetComponentInChildren<Weapon>();
     }
     private void Start()
-    {        
+    {
         enemyMask = LayerMask.GetMask("Enemy");
     }
 
-    public void SetMovement(bool active) 
+    public void SetMovement(bool active)
     {
         _animator.SetBool("Moving", active);
         startMovement = active;
@@ -41,16 +41,21 @@ public class Player : MonoBehaviour
             return;
 
         //continuously move forward
-        _rigidbody.MovePosition(_transform.position + Vector3.forward * speed  * Time.deltaTime);
-        
+        _rigidbody.MovePosition(_transform.position + Vector3.forward * speed * Time.deltaTime);
+
         //if player hit a wall;
         if (_rigidbody.position.z == lastPosition.z && jump && IsGrounded())
         {
             _rigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        
         }
 
-        if (jump) 
+        //if player jumped off the platforms
+        if (_transform.position.y <= -10f)
+        {
+            GameManager.Instance.FailFinishedLevel();
+        }
+
+        if (jump)
         {
             _rigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             jump = false;
@@ -68,7 +73,7 @@ public class Player : MonoBehaviour
         SetMovement(true);
     }
 
-    private bool IsGrounded() 
+    private bool IsGrounded()
     {
         return Math.Abs(_rigidbody.velocity.y) <= 0.01f;
     }
@@ -92,7 +97,7 @@ public class Player : MonoBehaviour
         transform.LookAt(closestEnemyPos);
     }
 
-    public void Shoot() 
+    public void Shoot()
     {
         gun.Shoot();
     }
@@ -122,7 +127,7 @@ public class Player : MonoBehaviour
 
     private void InputController_OnSwipeUp()
     {
-        if (!jump && IsGrounded()) 
+        if (!jump && IsGrounded())
         {
             jump = true;
         }
@@ -138,9 +143,9 @@ public class Player : MonoBehaviour
 
     private void InputController_OnSwipeLeft()
     {
-        if (IsGrounded() && transform.position.x > -1) 
+        if (IsGrounded() && transform.position.x > -1)
         {
-            transform.Translate(Vector3.left * horrizontalMovementUnit); 
+            transform.Translate(Vector3.left * horrizontalMovementUnit);
         }
     }
 
