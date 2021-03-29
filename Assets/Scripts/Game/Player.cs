@@ -10,9 +10,7 @@ public class Player : MonoBehaviour
     private bool jump;
     private float horrizontalMovementUnit = 3f;
     private Vector3 lastPosition;
-   /* private float gravity = 0.5f;
-    Vector3 heightMovement;
-    Vector3 horizontalMovement;*/
+
     private Animator _animator;
     private LayerMask enemyMask;
     private Weapon gun;
@@ -64,7 +62,6 @@ public class Player : MonoBehaviour
         lastPosition = _rigidbody.position;
     }
 
-
     private bool IsGrounded() 
     {
         return Math.Abs(_rigidbody.velocity.y) <= 0.01f;
@@ -88,8 +85,6 @@ public class Player : MonoBehaviour
 
         transform.LookAt(closestEnemyPos);
     }
-
-  
 
     public void Shoot() 
     {
@@ -116,7 +111,7 @@ public class Player : MonoBehaviour
 
     private void InputController_OnSwipeDown()
     {
-        Debug.Log("On Swipe down");
+        Debug.Log("On Swipe down not implemented");
     }
 
     private void InputController_OnSwipeUp()
