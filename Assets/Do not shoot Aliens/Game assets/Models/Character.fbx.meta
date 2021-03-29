@@ -1,92 +1,254 @@
 fileFormatVersion: 2
 guid: 0f92ed46637139641a35b5bf7d9ac850
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Character
-    100004: Character rig
-    100006: foot.L
-    100008: foot.L_end
-    100010: foot.R
-    100012: foot.R_end
-    100014: forearm.L
-    100016: forearm.L.002
-    100018: forearm.L.002_end
-    100020: forearm.R
-    100022: forearm.R.002
-    100024: forearm.R.002_end
-    100026: hand.L
-    100028: hand.L_end
-    100030: hand.R
-    100032: hand.R_end
-    100034: Rifle
-    100036: shin.L
-    100038: shin.R
-    100040: shoulder.L
-    100042: shoulder.R
-    100044: spine
-    100046: spine.001
-    100048: spine.002
-    100050: spine.005
-    100052: spine.006
-    100054: spine.006_end
-    100056: thigh.L
-    100058: thigh.R
-    100060: upper_arm.L
-    100062: upper_arm.R
-    400000: //RootNode
-    400002: Character
-    400004: Character rig
-    400006: foot.L
-    400008: foot.L_end
-    400010: foot.R
-    400012: foot.R_end
-    400014: forearm.L
-    400016: forearm.L.002
-    400018: forearm.L.002_end
-    400020: forearm.R
-    400022: forearm.R.002
-    400024: forearm.R.002_end
-    400026: hand.L
-    400028: hand.L_end
-    400030: hand.R
-    400032: hand.R_end
-    400034: Rifle
-    400036: shin.L
-    400038: shin.R
-    400040: shoulder.L
-    400042: shoulder.R
-    400044: spine
-    400046: spine.001
-    400048: spine.002
-    400050: spine.005
-    400052: spine.006
-    400054: spine.006_end
-    400056: thigh.L
-    400058: thigh.R
-    400060: upper_arm.L
-    400062: upper_arm.R
-    2100000: Gun
-    2100002: Gun wood
-    2100004: Character shirt
-    2100006: Character
-    2100008: Character pants
-    2100010: Character shoes
-    2300000: Rifle
-    3300000: Rifle
-    4300000: Rifle
-    4300002: Character
-    7400000: Character rig|Idle
-    7400002: Character rig|Reloading
-    7400004: Character rig|Running
-    7400006: Character rig|Shooting
-    9500000: //RootNode
-    13700000: Character
-    2186277476908879412: ImportLogs
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Character
+  - first:
+      1: 100004
+    second: Character rig
+  - first:
+      1: 100006
+    second: foot.L
+  - first:
+      1: 100008
+    second: foot.L_end
+  - first:
+      1: 100010
+    second: foot.R
+  - first:
+      1: 100012
+    second: foot.R_end
+  - first:
+      1: 100014
+    second: forearm.L
+  - first:
+      1: 100016
+    second: forearm.L.002
+  - first:
+      1: 100018
+    second: forearm.L.002_end
+  - first:
+      1: 100020
+    second: forearm.R
+  - first:
+      1: 100022
+    second: forearm.R.002
+  - first:
+      1: 100024
+    second: forearm.R.002_end
+  - first:
+      1: 100026
+    second: hand.L
+  - first:
+      1: 100028
+    second: hand.L_end
+  - first:
+      1: 100030
+    second: hand.R
+  - first:
+      1: 100032
+    second: hand.R_end
+  - first:
+      1: 100034
+    second: Rifle
+  - first:
+      1: 100036
+    second: shin.L
+  - first:
+      1: 100038
+    second: shin.R
+  - first:
+      1: 100040
+    second: shoulder.L
+  - first:
+      1: 100042
+    second: shoulder.R
+  - first:
+      1: 100044
+    second: spine
+  - first:
+      1: 100046
+    second: spine.001
+  - first:
+      1: 100048
+    second: spine.002
+  - first:
+      1: 100050
+    second: spine.005
+  - first:
+      1: 100052
+    second: spine.006
+  - first:
+      1: 100054
+    second: spine.006_end
+  - first:
+      1: 100056
+    second: thigh.L
+  - first:
+      1: 100058
+    second: thigh.R
+  - first:
+      1: 100060
+    second: upper_arm.L
+  - first:
+      1: 100062
+    second: upper_arm.R
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Character
+  - first:
+      4: 400004
+    second: Character rig
+  - first:
+      4: 400006
+    second: foot.L
+  - first:
+      4: 400008
+    second: foot.L_end
+  - first:
+      4: 400010
+    second: foot.R
+  - first:
+      4: 400012
+    second: foot.R_end
+  - first:
+      4: 400014
+    second: forearm.L
+  - first:
+      4: 400016
+    second: forearm.L.002
+  - first:
+      4: 400018
+    second: forearm.L.002_end
+  - first:
+      4: 400020
+    second: forearm.R
+  - first:
+      4: 400022
+    second: forearm.R.002
+  - first:
+      4: 400024
+    second: forearm.R.002_end
+  - first:
+      4: 400026
+    second: hand.L
+  - first:
+      4: 400028
+    second: hand.L_end
+  - first:
+      4: 400030
+    second: hand.R
+  - first:
+      4: 400032
+    second: hand.R_end
+  - first:
+      4: 400034
+    second: Rifle
+  - first:
+      4: 400036
+    second: shin.L
+  - first:
+      4: 400038
+    second: shin.R
+  - first:
+      4: 400040
+    second: shoulder.L
+  - first:
+      4: 400042
+    second: shoulder.R
+  - first:
+      4: 400044
+    second: spine
+  - first:
+      4: 400046
+    second: spine.001
+  - first:
+      4: 400048
+    second: spine.002
+  - first:
+      4: 400050
+    second: spine.005
+  - first:
+      4: 400052
+    second: spine.006
+  - first:
+      4: 400054
+    second: spine.006_end
+  - first:
+      4: 400056
+    second: thigh.L
+  - first:
+      4: 400058
+    second: thigh.R
+  - first:
+      4: 400060
+    second: upper_arm.L
+  - first:
+      4: 400062
+    second: upper_arm.R
+  - first:
+      21: 2100000
+    second: Gun
+  - first:
+      21: 2100002
+    second: Gun wood
+  - first:
+      21: 2100004
+    second: Character shirt
+  - first:
+      21: 2100006
+    second: Character
+  - first:
+      21: 2100008
+    second: Character pants
+  - first:
+      21: 2100010
+    second: Character shoes
+  - first:
+      23: 2300000
+    second: Rifle
+  - first:
+      33: 3300000
+    second: Rifle
+  - first:
+      43: 4300000
+    second: Rifle
+  - first:
+      43: 4300002
+    second: Character
+  - first:
+      74: 7400000
+    second: Character rig|Idle
+  - first:
+      74: 7400002
+    second: Character rig|Reloading
+  - first:
+      74: 7400004
+    second: Character rig|Running
+  - first:
+      74: 7400006
+    second: Character rig|Shooting
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Character
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -100,8 +262,8 @@ ModelImporter:
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Character rig|Reloading' has import animation
-      warnings that might lower retargeting quality:\nNote: Activate translation DOF
-      on avatar to improve retargeting quality.\n\t'spine.002' is inbetween humanoid
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'spine.002' is inbetween humanoid
       transforms and has rotation animation that will be discarded.\n\nClip 'Character
       rig|Shooting' has import animation warnings that might lower retargeting quality:\nNote:
       Activate translation DOF on avatar to improve retargeting quality.\n\t'spine.002'
@@ -123,6 +285,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Character rig|Idle
       takeName: Character rig|Idle
+      internalID: 0
       firstFrame: 0
       lastFrame: 5
       wrapMode: 0
@@ -151,6 +314,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Character rig|Reloading
       takeName: Character rig|Reloading
+      internalID: 0
       firstFrame: 0
       lastFrame: 31
       wrapMode: 0
@@ -179,6 +343,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Character rig|Running
       takeName: Character rig|Running
+      internalID: 0
       firstFrame: 0
       lastFrame: 15
       wrapMode: 0
@@ -207,6 +372,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Character rig|Shooting
       takeName: Character rig|Shooting
+      internalID: 0
       firstFrame: 0
       lastFrame: 12
       wrapMode: 0
@@ -246,37 +412,40 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.008
-    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
-    blendShapeNormalImportMode: 1
+    blendShapeNormalImportMode: 0
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human:
     - boneName: spine
       humanName: Hips
@@ -590,13 +759,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.8
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
+  avatarSetup: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
