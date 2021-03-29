@@ -33,7 +33,13 @@ public class TapToPlayPanel : Window
             startTimer = false;
         }
         timerImage.fillAmount = elapsedTime / maxTimer;
-        timerText.text = ((int)(maxTimer - elapsedTime)).ToString("00");
+        int remainingTime = (int)(maxTimer - elapsedTime);
+        if (remainingTime < 1f) 
+        {
+            timerText.text = "...Run";
+        }
+        else
+            timerText.text = remainingTime.ToString("00");
 
     }
 

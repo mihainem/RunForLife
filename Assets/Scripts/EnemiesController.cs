@@ -6,9 +6,11 @@ using UnityEngine.AI;
 public class EnemiesController : MonoBehaviour
 {
     [SerializeField] private int enemiesCount;
+    [SerializeField] private float maxDistanceToPlayer = 1.3f;
     private NavMeshAgent[] enemies;
     private int killedEnemies = 0;
     private bool startMovement = false;
+
 
     private Transform player;
     private void Start()
@@ -38,7 +40,7 @@ public class EnemiesController : MonoBehaviour
             if (agent != null)
             {
                 agent.SetDestination(player.position);
-                if ((agent.transform.position - player.position).magnitude <= 1f)
+                if ((agent.transform.position - player.position).magnitude <= maxDistanceToPlayer)
                 {
                     GameManager.Instance.FailFinishedLevel();
                 }
